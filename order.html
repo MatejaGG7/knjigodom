@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/order.css"/>
+    <meta charset="utf-8"/>
+    <link href="Assets/img/knjigodom2.ico" rel="icon"/>
+    <title>Naručivanje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mateja.kotorcevic.41.24@ict.edu.rs">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div  id="header">
+        <div id="logo">
+            <a href="index.html">
+                <img src="Assets/img/knjigodom.png"/>
+                <h1 class="title">Knjigodom</h1>
+            </a>
+        </div>
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="highlighted">
+                            <i class="fa-solid fa-house icon-home"></i>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="categories.html"><span class="highlighted">Kategorije</span></a></li>
+                <li><a href="gallery.html"><span class="highlighted">Galerija</span></a></li>
+                <li><a href="contact.html"><span class="highlighted">Kontakt</span></a></li>
+                <li><a href="order.html"><span class="highlighted">Naručivanje</span></a></li>
+                <li><a href="about.html"><span class="highlighted">O autoru</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="order-container">
+        <h2>Naručivanje</h2>
+        <form id="order-form">
+            <label for="name">Ime i prezime:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Adresa za dostavu:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="product">Proizvod:</label>
+            <select id="product" name="product" required>
+                <option value="knjiga1">Srećna Voda</option>
+                <option value="knjiga2">Rat dveju kraljica</option>
+                <option value="knjiga3">Lutajući Bokelj</option>
+                <option value="knjiga4">Jedro nade</option>
+                <option value="knjiga5">Vreme čuda</option>
+                <option value="knjiga6">Naruto</option>
+                <option value="knjiga7">Ultraman</option>
+                <option value="knjiga8">Bakuman</option>
+                <option value="knjiga9">Napad titana</option>
+                <option value="knjiga10">Tokijski osvetnici</option>
+                <option value="knjiga11">Ime vetra</option>
+                <option value="knjiga12">Lord of the Rings</option>
+                <option value="knjiga13">A Song of Ice and Fire</option>
+                <option value="knjiga14">Harry Potter</option>
+                <option value="knjiga15">The Witcher</option>
+                <option value="knjiga16">Ratnik</option>
+                <option value="knjiga17">Ikonostas</option>
+                <option value="knjiga18">Enco</option>
+                <option value="knjiga19">Na Drini Ćuprija</option>
+                <option value="knjiga20">Mundo Libre</option>
+                <option value="knjiga21">Buba</option>
+                <option value="knjiga22">Quattro Stagioni</option>
+                <option value="knjiga23">Kišni psi</option>
+                <option value="knjiga24">Osmi život</option>
+                <option value="knjiga25">Serafim</option>
+                <option value="knjiga26">Kotao</option>
+                <option value="knjiga27">Doktor Živago</option>
+                <option value="knjiga28">Zamir</option>
+                <option value="knjiga29">Žuti šafran</option>
+                <option value="knjiga30">Sandro</option>
+                <option value="knjiga31">Ilon Mask</option>
+                <option value="knjiga32">Euforija</option>
+                <option value="knjiga33">Panonski admiral</option>
+                <option value="knjiga34">Ovo sam ja</option>
+                <option value="knjiga35">Biti Elvis Prisli</option>
+                <option value="knjiga36">Mali princ</option>
+                <option value="knjiga37">Začarana sprava</option>
+                <option value="knjiga38">Bajke</option>
+                <option value="knjiga39">Tajne dedinog kofera</option>
+                <option value="knjiga40">Lesi dolazi kući</option>
+            </select>
+            <button type="submit">Pošalji narudžbinu</button>
+        </form>
+    </div>
+    <footer id="footer">
+        <div class="footer-sekcija">
+            <div class="footer-kolona">
+                <h3>Knjigodom</h3>
+                <img src="Assets/img/knjigodom.png">
+            </div>
+            <div class="footer-kolona">
+                <h3>Brzi linkovi</h3>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="categories.html">Kategorije</a></li>
+                    <li><a href="gallery.html">Galerija</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="order.html">Naručivanje</a></li>
+                    <li><a href="about.html">O autoru</a></li>
+                </ul>
+            </div>
+            <div class="footer-kolona">
+                <h3>Kontakt</h3>
+                <p><i class="fas fa-envelope"></i> mateja.kotorcevic.42.24@ict.edu.rs</p>
+                <p><i class="fas fa-phone"></i> +381 69 160 4081</p>
+                <p><i class="fas fa-map-marker-alt"></i> Beograd, Srbija</p>
+            </div>
+            <div class="footer-kolona">
+                <h3>Pratite nas</h3>
+                <div class="socijalne-mreze">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-dno">
+            <p>&copy; 2024 Knjigodom. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+
+
+    
+</body>
+</html>
