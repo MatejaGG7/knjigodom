@@ -5,7 +5,6 @@
     <meta charset="utf-8"/>
     <meta name="description" content="Otkrivajte svet knjiga - od klasika do modernih dela. Idealno mesto za ljubitelje književnosti i strastvene čitaoce.">
     <meta name="keywords" content="knjige, knjižara, literatura, čitanje, klasici, moderna dela, ljubav prema knjigama, romani, poezija, stripovi, prodaja knjiga">
-    <meta name="viewport" content="width=device-width, initial-scale1.0">
     <link href="Assets/img/knjigodom2.ico" rel="icon"/>
     <title>Kategorije</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,174 +12,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="categories-page">
     <div id="header-container">
         <div  id="header">
-        <div id="logo">
-            <a href="index.html">
-                <img src="Assets/img/knjigodom.png" alt="Logo"/>
-                <h1 class="title">Knjigodom</h1>
-            </a>
-        </div>
-        <div id="nav">
-            <ul>
-                <li><a href="index.html"><span class="highlighted"><i class="fa-solid fa-house" style="font-size: 30px;"></i></span></a></li>
-                <li><a href="categories.html"><span class="highlighted">Kategorije</span></a></li>
-                <li><a href="gallery.html"><span class="highlighted">Galerija</span></a></li>
-                <li><a href="contact.html"><span class="highlighted">Kontakt</span></a></li>
-                <li><a href="order.html"><span class="highlighted">Naručivanje</span></a></li>
-                <li><a href="about.html"><span class="highlighted">O autoru</span></a></li>
-            </ul>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="Assets/img/knjigodom.png" alt="Logo"/>
+                    <h1 class="title">Knjigodom</h1>
+                </a>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="Sajt.zip"><span class="highlighted">Zip</span></a></li>
+                    <li><a href="index.html"><span class="highlighted">Početna</span></a></li>
+                    <li><a href="categories.html"><span class="highlighted">Kategorije</span></a></li>
+                    <li><a href="gallery.html"><span class="highlighted">Galerija</span></a></li>
+                    <li><a href="contact.html"><span class="highlighted">Kontakt</span></a></li>
+                    <li><a href="about.html"><span class="highlighted">O autoru</span></a></li>
+                </ul>
+            </div>
         </div>
         </div>
     </div>
     <section class="category-title">
-        <h1 class="category-heading">Kategorije</h1>
-        <p class="category-description">Ovde možete pronaći neke od naših mnogobrojnih knjiga.</p>
-    </section>
-    <div id="main">
-        <div class="naslov">
-            <h2 class="section-title">Istorijski</h2>
-        </div>
-        <hr class="section-divider"/>
-        <div class="blokovi">
-            <div class="blok">
-                <img src="Assets/img/knjiga16.jpg" alt="Knjiga 16">
-                <p>Ratnik<br/>Stiven Presfild<br/>Cena:1100 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga17.jpg" alt="Knjiga 17">
-                <p>Ikonostas<br/>Goran Petrović<br/>Cena:1900 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga18.jpg" alt="Knjiga 18">
-                <p>Enco<br/>Enriko Brici<br/>Cena:700 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga19.jpg" alt="Knjiga 19">
-                <p>Na Drini Ćuprija<br/>Ivo Andrić<br/>Cena:1100 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga20.jpg" alt="Knjiga 20">
-                <p>Mundo Libre<br/>Marko Krstić<br/>Cena:1500 RSD</p>
-            </div>
-        </div>
-    </div>
+    <h1 class="category-heading">Kategorije</h1>
+    <p class="category-description">Ovde možete pronaći neke od naših mnogobrojnih knjiga.</p>
+</section>
 
-    <div id="main">
-        <div class="naslov">
-            <h2 class="section-title">Fantazija</h2>
-        </div>
-        <hr class="section-divider"/>
-        <div class="blokovi">
-            <div class="blok">
-                <img src="Assets/img/knjiga21.jpg" alt="Knjiga 21">
-                <p>Buba<br/>Gradimir Stojković<br/>Cena:700 RSD</p>
+<div id="shop-container"></div>
+<div id="overlay">
+            <div id="pozadinskiProstor">
+                <p id="X">X</p>
+                <h2 id="nazivKnjige"></h2>
+                <div class="popup-sadrzaj">
+                    <img id="velikaSlika" alt="Knjiga">
+                    <div class="popup-info">
+                        <p id="opisKnjige"></p>
+                        <p id="autorKnjige"></p>
+                        <p id="cenaKnjige"></p>
+                    </div>
+                </div>
             </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga22.jpg" alt="Knjiga 22">
-                <p>Quattro Stagioni<br/>Slobodan Tišma<br/>Cena:500 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga23.jpg" alt="Knjiga 23">
-                <p>Kišni psi<br/>Dejan Stojiljković<br/>Cena:1000 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga24.jpg" alt="Knjiga 24">
-                <p>Osmi život<br/>Uroš Timić<br/>Cena:2000 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga25.jpg" alt="Knjiga 25">
-                <p>Serafim<br/>Dejan Stojiljković<br/>Cena:1200 RSD</p>
-            </div>
-        </div>
-    </div>
+</div>
 
-    <div id="main">
-        <div class="naslov">
-            <h2 class="section-title">Drama</h2>
-        </div>
-        <hr class="section-divider"/>
-        <div class="blokovi">
-            <div class="blok">
-                <img src="Assets/img/knjiga26.jpg" alt="Knjiga 26">
-                <p>Kotao<br/>Jovica Aćin<br/>Cena:1100 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga27.jpg" alt="Knjiga 27">
-                <p>Doktor Živago<br/>Boris Pasternak<br/>Cena:1300 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga28.jpg" alt="Knjiga 28">
-                <p>Zamir<br/>Hakan Gundaj<br/>Cena:1500 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga29.jpg" alt="Knjiga 29">
-                <p>Žuti šafran<br/>Lejla Ibrahim<br/>Cena:1700 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga30.jpg" alt="Knjiga 30">
-                <p>Sandro<br/>Elvin Nezirović<br/>Cena:1900 RSD</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="main">
-        <div class="naslov">
-            <h2 class="section-title">Biografija</h2>
-        </div>
-        <hr class="section-divider"/>
-        <div class="blokovi">
-            <div class="blok">
-                <img src="Assets/img/knjiga31.jpg" alt="Knjiga 31">
-                <p>Ilon Mask<br/>Volter Ajzakson<br/>Cena:1400 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga32.jpg" alt="Knjiga 32">
-                <p>Euforija<br/>Elin Kulhed<br/>Cena:1200 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga33.jpg" alt="Knjiga 33">
-                <p>Panonski admiral<br/>Ivan Ivačković<br/>Cena:1800 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga34.jpg" alt="Knjiga 34">
-                <p>Ovo sam ja<br/>Aca Lukas<br/>Cena:1100 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga35.jpg" alt="Knjiga 35">
-                <p>Biti Elvis Prisli<br/>Rej Konoli<br/>Cena:1500 RSD</p>
-            </div>
-        </div>
-    </div>
-    <div id="main">
-        <div class="naslov">
-            <h2 class="section-title">Za decu</h2>
-        </div>
-        <hr class="section-divider"/>
-        <div class="blokovi">
-            <div class="blok">
-                <img src="Assets/img/knjiga36.jpg" alt="Knjiga 36">
-                <p>Mali princ<br/>Antoan de Sent Egziperi<br/>Cena:1400 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga37.jpg" alt="Knjiga 37">
-                <p>Začarana sprava<br/>Uroš Petrović<br/>Cena:1200 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga38.jpg" alt="Knjiga 38">
-                <p>Bajke<br/>Uroš Petrović<br/>Cena:1800 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga39.jpg" alt="Knjiga 39">
-                <p>Tajne dedinog kofera<br/>Bojan Ljubenović<br/>Cena:1100 RSD</p>
-            </div>
-            <div class="blok">
-                <img src="Assets/img/knjiga40.jpg" alt="Knjiga 40">
-                <p>Lesi dolazi kući<br/>Erik Najt<br/>Cena:1500 RSD</p>
-            </div>
-        </div>
-    </div>
     <footer id="footer">
         <div class="footer-sekcija">
             <div class="footer-kolona">
@@ -218,5 +92,6 @@
             <p>&copy; 2024 Knjigodom. Sva prava zadržana.</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

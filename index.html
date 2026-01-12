@@ -6,14 +6,13 @@
         <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
         <meta name="description" content="Otkrivajte svet knjiga - od klasika do modernih dela. Idealno mesto za ljubitelje književnosti i strastvene čitaoce.">
         <meta name="keywords" content="knjige, knjižara, literatura, čitanje, klasici, moderna dela, ljubav prema knjigama, romani, poezija, stripovi, prodaja knjiga">
-        <meta name="viewport" content="width=device-width, initial-scale1.0">
         <title>Knjigodom</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="mateja.kotorcevic.41.24@ict.edu.rs">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
-    <body>
+    <body id="index">
         <div  id="header">
             <div id="logo">
                 <a href="index.html">
@@ -23,11 +22,11 @@
             </div>
             <div id="nav">
                 <ul>
-                    <li><a href="index.html"><span class="highlighted"><i class="fa-solid fa-house icon-home"></i></span></a></li>
+                    <li><a href="Sajt.zip"><span class="highlighted">Zip</span></a></li>
+                    <li><a href="index.html"><span class="highlighted">Početna</span></a></li>
                     <li><a href="categories.html"><span class="highlighted">Kategorije</span></a></li>
                     <li><a href="gallery.html"><span class="highlighted">Galerija</span></a></li>
                     <li><a href="contact.html"><span class="highlighted">Kontakt</span></a></li>
-                    <li><a href="order.html"><span class="highlighted">Naručivanje</span></a></li>
                     <li><a href="about.html"><span class="highlighted">O autoru</span></a></li>
                 </ul>
             </div>
@@ -46,101 +45,112 @@
                 </p>
             </div>
         </div>
+
+        <!--NOVO-->
         <div id="main">
             <div class="naslov">
                 <h2 class="section-title">Novo</h2>
             </div>
             <hr class="section-divider"/>
-            <div class="blokovi">
-                <div class="blok">
-                    <img src="Assets/img/knjiga1.jpg" alt="Knjiga 1">
-                    <p>Srećna Voda<br/>Nenad Šaponja<br/>Cena:1400 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga2.jpg" alt="Knjiga 2">
-                    <p>Rat dveju kraljica<br/>Dženifer L. Armentraut<br/>Cena:1200 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga3.jpg" alt="Knjiga 3">
-                    <p>Lutajući Bokelj<br/>Nikola Malović<br/>Cena:1800 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga4.jpg" alt="Knjiga 4">
-                    <p>Jedro nade<br/>Nikola Malović<br/>Cena:1100 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga5.jpg" alt="Knjiga 5">
-                    <p>Vreme čuda<br/>Borislav Pekić<br/>Cena:1500 RSD</p>
+            <div class="blokovi" id="novoBooks"></div>
+        </div>
+
+
+        <!--POPUP PROZOR-->
+        <div id="overlay">
+            <div id="pozadinskiProstor">
+                <p id="X">X</p>
+                <h2 id="nazivKnjige"></h2>
+                <div class="popup-sadrzaj">
+                    <img id="velikaSlika" alt="Knjiga">
+                    <div class="popup-info">
+                        <p id="opisKnjige"></p>
+                        <p id="autorKnjige"></p>
+                        <p id="cenaKnjige"></p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!--MANGE-->
         <div id="main2">
             <div class="naslov">
                 <h2 class="section-title">Mange</h2>
             </div>
             <hr class="section-divider"/>
-            <div class="blokovi">
-                <div class="blok">
-                    <img src="Assets/img/knjiga6.jpg" alt="Knjiga 6">
-                    <p>Naruto<br/>Masaši Kišimoto<br/>Cena:300 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga7.jpg" alt="Knjiga 7">
-                    <p>Ultraman<br/>Tetsuo Kinjo<br/>Cena:700 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga8.jpg" alt="Knjiga 8">
-                    <p>Bakuman<br/>Takeši Obata<br/>Cena:1100 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga9.jpg" alt="Knjiga 9">
-                    <p>Napad titana<br/>Hadžime Isajama<br/>Cena:900 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga10.jpg" alt="Knjiga 10">
-                    <p>Tokijski osvetnici<br/>Ken Vakui<br/>Cena:400 RSD</p>
-                </div>
-            </div>
+            <div class="blokovi" id="mangaBooks"></div>
         </div>
+
+
         <div id="akcija">
-            <h2>Samo petkom!!!</h2>
+            <h2 class="akcijskiNaslov">Samo petkom!</h2>
             <hr class="akcija-divider" />
             <div class="akcija-content">
                 <h3>Samo kod nas, svakog petka možete kupiti knjige<br />po neverovatnoj ponudi od <span>10% popusta!</span></h3>
-                <p>Kako bi proslavili kraj radnih dana i početak vikenda, <br/>svakog petka vas očekuje popust na sve knjige uz članstvo naše knjižare.<br/>
+                <p>Kako bi smo proslavili kraj radnih dana i početak vikenda, <br/>svakog petka vas očekuje popust na sve knjige uz članstvo naše knjižare.<br/>
                     Sve što je potrebno jeste da se učlanite u našoj knjižari i prvom kupovinom naših knjiga ostvarujte dodatnih 20% popusta!</p>
                 <img src="Assets/img/popust.jpg" alt="popust"/>
             </div>
         </div>
         
+        <!--FANTAZIJA-->
         <div id="main3">
             <div class="naslov">
                 <h2 class="section-title">Fantazija</h2>
             </div>
             <hr class="section-divider"/>
-            <div class="blokovi">
-                <div class="blok">
-                    <img src="Assets/img/knjiga11.jpg" alt="Knjiga 11">
-                    <p>Ime vetra<br/>Patrik Rotfus<br/>Cena:1800 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga12.jpg" alt="Knjiga 12">
-                    <p>Lord of the Rings<br/>J.R.R. Tolkien<br/>Cena:2500 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga13.jpg" alt="Knjiga 13">
-                    <p>A Song of Ice and Fire<br/>George R.R. Martin<br/>Cena:3200 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga14.jpg" alt="Knjiga 14">
-                    <p>Harry Potter<br/>J.K. Rowling<br/>Cena:3500 RSD</p>
-                </div>
-                <div class="blok">
-                    <img src="Assets/img/knjiga15.jpg" alt="Knjiga 15">
-                    <p>The Witcher<br/>Andrzej Sapkowski<br/>Cena:1500 RSD</p>
-                </div>
+            <div class="blokovi" id="fantasyBooks"></div>
+        </div>
+
+        <!--HOROR-->
+        <div id="main4">
+            <div class="naslov">
+                <h2 class="section-title">Horor</h2>
+            </div>
+            <hr class="section-divider"/>
+            <div class="blokovi" id="horrorBooks"></div>
+        </div>
+
+        <!--ENCIKLOPEDIJA-->
+        <div id="main5">
+            <div class="naslov">
+                <h2 class="section-title">Enciklopedija</h2>
+            </div>
+            <hr class="section-divider"/>
+            <div class="blokovi" id="encyclopediaBooks"></div>
+        </div>
+
+
+        <div id="akcija2">
+            <h2 class="akcijskiNaslov">Kartica lojalnosti</h2>
+            <hr class="akcija2-divider" />
+            <div class="akcija2-content">
+                <h3>Kartica lojalnosti samo za najlojalnije kupce!</h3>
+                <p>Ukoliko ste zadovoljni nasim uslugama i često kupujete knjige kod nas,<br/>ostvarujete neverovatnu pogodnost kartice lojalnosti koja vam pruža pogodnost od 30% popusta na sve knjige!<br/>
+                    Sve što je potrebno jeste da se obratite na kasi u nekoj od nasih radnji i postaćete član Knjigodoma!</p>
+                <img src="Assets/img/kartica.jpg" alt="kartica"/>
             </div>
         </div>
+
+        <!--FILOZOFIJA-->
+        <div id="main6">
+            <div class="naslov">
+                <h2 class="section-title">Filozofija</h2>
+            </div>
+            <hr class="section-divider"/>
+            <div class="blokovi" id="philosophyBooks"></div>
+        </div>
+
+        <!--EDUKATIVNI-->
+        <div id="main7">
+            <div class="naslov">
+                <h2 class="section-title">Edukativni</h2>
+            </div>
+            <hr class="section-divider"/>
+            <div class="blokovi" id="educationalBooks"></div>
+        </div>
+
+
         <footer id="footer">
             <div class="footer-sekcija">
                 <div class="footer-kolona">
@@ -178,5 +188,6 @@
                 <p>&copy; 2024 Knjigodom. Sva prava zadržana.</p>
             </div>
         </footer>
+        <script src="js/main.js"></script>
     </body>
     </html>

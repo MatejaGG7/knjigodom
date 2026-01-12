@@ -5,7 +5,6 @@
     <meta charset="utf-8"/>
     <meta name="description" content="Ovim putem nas možete kontaktirati.">
     <meta name="keywords" content="knjige, knjižara, literatura, čitanje, klasici, moderna dela, ljubav prema knjigama, romani, poezija, stripovi, prodaja knjiga">
-    <meta name="viewport" content="width=device-width, initial-scale1.0">
     <link href="Assets/img/knjigodom2.ico" rel="icon"/>
     <title>Kontakt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="contact-page">
     <div id="header-container">
         <div  id="header">
             <div id="logo">
@@ -24,31 +23,62 @@
             </div>
             <div id="nav">
                 <ul>
-                    <li><a href="index.html"><span class="highlighted"><i class="fa-solid fa-house" style="font-size: 30px;"></i></span></a></li>
+                    <li><a href="Sajt.zip"><span class="highlighted">Zip</span></a></li>
+                    <li><a href="index.html"><span class="highlighted">Početna</span></a></li>
                     <li><a href="categories.html"><span class="highlighted">Kategorije</span></a></li>
                     <li><a href="gallery.html"><span class="highlighted">Galerija</span></a></li>
                     <li><a href="contact.html"><span class="highlighted">Kontakt</span></a></li>
-                    <li><a href="order.html"><span class="highlighted">Naručivanje</span></a></li>
                     <li><a href="about.html"><span class="highlighted">O autoru</span></a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div id="contact-container">
-        <h2>Kontaktirajte nas<br/>Broj telefona:069 1604081</h2>
-        <form id="contact-form">
-            <label for="name">Ime i prezime:</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="message">Poruka:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-    
-            <button type="submit">Pošaljite poruku</button>
-        </form>
-    </div>
+    <h2>Kontaktirajte nas</h2>
+    <form id="contact-form">
+        <label for="tbIme">Ime:</label>
+        <input type="text" id="tbIme" placeholder="npr. Marko">
+        <span id="errIme" class="error-msg"></span>
+
+        <label for="tbPrezime">Prezime:</label>
+        <input type="text" id="tbPrezime" placeholder="npr. Marković">
+        <span id="errPrezime" class="error-msg"></span>
+
+        <label for="tbEmail">Email:</label>
+        <input type="text" id="tbEmail" placeholder="npr. marko@gmail.com">
+        <span id="errEmail" class="error-msg"></span>
+
+        <label for="tbTelefon">Broj telefona:</label>
+        <input type="text" id="tbTelefon" placeholder="npr. 0641234567">
+        <span id="errTelefon" class="error-msg"></span>
+
+        <label for="ddlRazlog">Razlog javljanja:</label>
+        <select id="ddlRazlog">
+            <option value="0">Izaberite...</option>
+            <option value="pitanje">Pitanje</option>
+            <option value="reklamacija">Reklamacija</option>
+            <option value="predlog">Predlog</option>
+        </select>
+        <span id="errRazlog" class="error-msg"></span>
+        
+
+        <label for="taPoruka">Poruka:</label>
+        <textarea id="taPoruka" rows="5"></textarea>
+        <span id="errPoruka" class="error-msg"></span>
+
+        <div class="newsletter-grupa">
+            <input type="checkbox" id="chbNewsletter" name="chbNewsletter" value="da">
+            <label for="chbNewsletter">Prijavite se na naš newsletter (obaveštenja o popustima i novim knjigama)</label>
+        </div>
+
+        <div class="form-buttons">
+            <button type="button" id="btnPosalji">Pošaljite poruku</button>
+            <button type="reset" id="btnReset">Resetuj polja</button>
+        </div>
+        
+        <div id="uspesna-poruka"></div>
+    </form>
+</div>
     <footer id="footer">
         <div class="footer-sekcija">
             <div class="footer-kolona">
@@ -86,9 +116,6 @@
             <p>&copy; 2024 Knjigodom. Sva prava zadržana.</p>
         </div>
     </footer>
-
-
-
-    
+    <script src="js/main.js"></script>
 </body>
 </html>
